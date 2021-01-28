@@ -2,7 +2,7 @@
 - O GestorMetatag é um modolo que realiza a inclusão de uma metatag em páginas CMS presentes em mais de uma loja/visão, esta metatag inclui o idioma da loja/visão atual e o caminho absoluto da página CMS como no medelo abaixo.
  <link rel="alternate" hreflang="pt_br" href="http://www.sualoja.com.br/about-us/" />.
  
-## Especificações (Versão usada para o desenvolvimento)
+## Especificações (Versão utilizada para desenvolvimento)
 - Magento versão 2.3.4.
 
 ## Instalação
