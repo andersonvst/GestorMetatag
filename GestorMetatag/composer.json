@@ -1,0 +1,22 @@
+{
+    "name": "andersonmorais/module-gestormetatag",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "andersonvst@gmail.com",
+            "name": "Anderson Morais"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "AndersonMorais\\GestorMetatag\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+<?php
+/**
+* @var $block \AndersonMorais\GestorMetatag\Block\CustomizarHead
+*/
+/**/
+
+/*Recupera ID da página CMS atual*/
+$paginaId = $block->getPaginaId();
+
+if($paginaId){
+   
+   /*Recupera idioma da página atual*/
+   $storeLanguage = $block->getLojaIdioma();
+
+   /*Recupera lista de informações das página atual*/
+   $retorno = $block->getInfosPaginas($paginaId);
+
+   foreach($retorno as $item){
+      /* Imprime Metatag se estiver presente em mais de uma loja\visão ativa */
+      if(count($item['lojasIdsLista']) != 1){
+         echo  '<link rel="alternate" hreflang="'.$storeLanguage.'" href="'.$this->getUrl($item['url']).'" />';
+      }
+   }
+}
